@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Private Site</title>
+</head>
+<body style="text-align:center; background:#111; color:white;">
+
+  <h2>ادخل الباسورد</h2>
+  <input type="password" id="pass">
+  <br><br>
+  <button onclick="check()">دخول</button>
+
+  <script>
+    function check(){
+      if(document.getElementById("pass").value === "2008"){
+        window.location.href = "home.html";
+      } else {
+        alert("باسورد غلط");
+      }
+    }
+  </script>
+
+</body>
+</html>
