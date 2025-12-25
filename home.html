@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Photos</title>
+</head>
+<body style="text-align:center; background:#111; color:white;">
+  <h1>صوري الشخصية</h1>
+  <div id="gallery"></div>
+
+  <script>
+    const photos = [
+      "18bcc68a-c557-4721-b910-0a52a70872a6",
+      "3d2ec9c4-dd03-4325-9285-49eea83ee506",
+      "b0bbf13b-d4b8-49d1-ae11-c8c0a0d3d17f",
+      "66165c52-5337-4cfd-b732-da26f44a8ea8",
+      "6e175660-7518-4573-95c7-556e0d5bb7e3",
+      "c386a6c6-68c1-4ff1-8718-c2dda98edbcf",
+      "cfda4b77-2947-4eb4-9076-dd6d97d9148b",
+      "332f9b6c-dccc-4e4d-b968-d175a3a011e0",
+      "b8940ce5-fb17-4612-848d-8d68ddb2d8ca",
+      "c6df665b-5ebf-4de2-a2fb-410f05c40b03",
+      "b7c07486-aaba-4986-ad59-fe5cbce0d5b0",
+      "09990535-9650-47a3-a847-47d331d9358d",
+      "079e9f83-77e9-47e2-80bb-245c1a3308db",
+      "e74e143e-c613-420e-91af-c332871f61f5",
+      "e70de9aa-e85f-43c9-bf0d-78cf043f91a4",
+      "3bc586e6-fb29-4a49-8a31-b3a2ac208c26"
+    ];
+
+    const gallery = document.getElementById("gallery");
+
+    photos.forEach(p => {
+      const img = document.createElement("img");
+      img.src = "photos/" + p;
+      img.width = 200;
+      img.style.margin = "10px";
+      gallery.appendChild(img);
+    });
+  </script>
+</body>
+</html>
